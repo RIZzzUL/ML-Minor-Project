@@ -1,0 +1,5 @@
+predictions.db
+german_credit_data*.csv
+*.ipynb
+__pycache__/
+.DS_Store
