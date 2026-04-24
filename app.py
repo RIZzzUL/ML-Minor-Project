@@ -86,6 +86,14 @@ st.markdown("""
         color: #2D3748;
         font-size: 1.05rem;
     }
+    /* Hide Streamlit Default Menu/Toolbar (GitHub icon, etc.) */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    [data-testid="stToolbar"] {
+        visibility: hidden !important;
+        display: none !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
