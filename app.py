@@ -89,10 +89,17 @@ st.markdown("""
     /* Hide Streamlit Default Menu/Toolbar (GitHub icon, etc.) */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
     [data-testid="stToolbar"] {
         visibility: hidden !important;
         display: none !important;
+    }
+    /* Make the Sidebar Navigation Toggle highly visible */
+    [data-testid="collapsedControl"] {
+        color: #4C51BF !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        margin: 10px;
     }
 </style>
 """, unsafe_allow_html=True)
